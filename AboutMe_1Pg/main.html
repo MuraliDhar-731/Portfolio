@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - MURALIDHAR KOLIMALI</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            background: #000; /* Background changed to black */
+            color: #ed8a8a; /* Text color remains pink */
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+        .content {
+            flex: 2;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .image-section {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+        }
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the overlay */
+            width: 66.66%; /* 2/3 of the background image width */
+            height: 66.66%; /* 2/3 of the background image height */
+            background: url("images/UFYJF.jpg") center/cover; /* Replace with your image URL */
+            border: 5px solid #fff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 10px 0;
+            color: #1c99ae; /* Pink color for heading */
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #57ffeb; /* Yellow color for subheading */
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .skills span {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9rem;
+            color: #ed8a8a; /* Pink color for skills */
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info a {
+            color: #ffdd57; /* Yellow color for contact links */
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center; /* Center align social media links */
+        }
+        .social-links a {
+            color: #ffdd57; /* Yellow color for social media icons */
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #ffdd57; /* Keep yellow on hover */
+        }
+        .contact-info {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    justify-content: flex-start; /* Align buttons to the left */
+}
+
+.btn {
+    background-color: #000000; /* Yellow background */
+    color: #000; /* Black text */
+    text-decoration: none;
+    padding: 10px 20px; /* Padding for button size */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 1rem;
+    font-weight: 600; /* Bold text */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid #ffdd57; /* Yellow border */
+}
+
+.btn:hover {
+    background-color: #000; /* Black background on hover */
+    color: #ffdd57; /* Yellow text on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+    border: 2px solid #ffdd57; /* Yellow border on hover */
+}
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Content Section -->
+        <div class="content">
+            <h1>MURALIDHAR KOLIMALI</h1>
+            <h2>DATA ANALYST | DATA SCIENCE ENTHUSIAST</h2>
+            <p>
+                INNOVATIVE LOOKING FOR A PERFECT OPPORTUNITY AND PLACE TO EXPLORE. TO UTILIZE MY SKILLS
+ AND ABILITIES, CONTRIBUTING QUALITATIVE AND INNOVATIVE IDEAS AND WORK FOR AN
+ ORGANIZATION WHERE THERE IS AMPLE SCOPE FOR INDIVIDUAL AS WELL AS ORGANIZATION GROWTH
+ ANDA ALSO TO LEAD, MANAGE AND INTERACT WITH LARGE GROUPS OF PEOPLE. 
+            </p>
+            <div class="skills">
+                <span>SQL</span>
+                <span>PL/SQL</span>
+                <span>PRO*C</span>
+                <span>PYTHON</span>
+                <span>Data Visualization</span>
+            </div>
+           
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/MuralidharKolimali/" target="_blank" class="btn">LinkedIn</a>
+                <a href="mailto:muralidhar731k@gmail.com" class="btn">Email</a>
+                <a href="tel:+12036680771" class="btn">Phone</a>
+                <a href="MuraliDhar_K.pdf" download class="btn">
+                    <i class="fas fa-download"></i> Download Resume <!-- Add icon -->
+                </a>
+            </div>    
+        </div>
+
+        <!-- Image Section -->
+        <div class="image-section">
+            <img src="images/UFYJF.jpg" alt="MURALIDHAR KOLIMALI" class="profile-img"> <!-- Replace with your image URL -->
+            <div class="overlay"></div>
+        </div>
+    </div>
+    
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

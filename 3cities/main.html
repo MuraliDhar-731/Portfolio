@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cities</title>
+  <style>
+    /* Reset defaults */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /*
+      The body is a flex container that occupies the entire viewport
+      and centers its children both horizontally and vertically.
+    */
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;          /* Disable scrolling */
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;             /* Make body a flex container */
+      align-items: center;       /* Vertical center */
+      justify-content: center;   /* Horizontal center */
+    }
+
+    /*
+      .scale-container is scaled to 110% (1.1)
+      and its origin is the very center, so it grows out evenly.
+    */
+    .scale-container {
+      transform: scale(1.1);
+      transform-origin: center center;
+    }
+
+    /* Headings */
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+    h2 {
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    /* A grid for the 3 columns of tiles */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto 30px; /* center and add spacing below if space allows */
+    }
+
+    /*
+      Each tile: 350×225 before scaling.
+      After transform: scale(1.1), visually ~385×248.
+    */
+    .city-tile {
+      width: 350px;
+      height: 225px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      overflow: hidden;
+      background-color: #fff;
+    }
+
+    /* Image (top ~60%) */
+    .city-image {
+      flex: 3; 
+      overflow: hidden;
+    }
+    .city-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Text area (bottom ~40%) */
+    .city-text {
+      flex: 2;
+      padding: 8px;
+      font-size: 0.9rem;
+      line-height: 1.2;
+      background-color: #f9f9f9;
+    }
+    .city-text h3 {
+      margin: 0 0 4px;
+      font-size: 1rem;
+    }
+    .city-text span {
+      font-size: 0.85rem;
+      color: #555;
+    }
+    .city-text p {
+      margin: 4px 0 0;
+      font-size: 0.85rem;
+      line-height: 1.3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- The container that is scaled to 110% and centered in the page -->
+  <div class="scale-container">
+    <h1>Cities</h1>
+
+    <h2>Top 3 Cities I Have Called Home</h2>
+    <div class="grid-container">
+      <!-- Tile 1 -->
+      <div class="city-tile">
+        <div class="city-image">
+          <img src="orange ct.jpeg" alt="New Haven, CT">
+        </div>
+        <div class="city-text">
+          <h3>New Haven, CT <span> Peaceful</span></h3>
+          <p>
+            I live in New Haven with my friends.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tile 2 -->
+      <div class="city-tile">
+        <div class="city-image">
+          <img src="vskp.jpeg" alt="Visakhapatnam, India">
+        </div>
+        <div class="city-text">
+          <h3>Visakhapatnam, India <span> City of Visakhapatnam</span></h3>
+          <p>
+            I lived in Visakhapatnam with my family for over 20 years known for  
+            its rich mountain ranges and beaches.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tile 3 -->
+      <div class="city-tile">
+        <div class="city-image">
+          <img src="chennai.jpeg" alt="Chennai, India">
+        </div>
+        <div class="city-text">
+          <h3>Chennai India <span>&#9829; Fast-paced urban life</span></h3>
+          <p>
+            I lived in Chennai while working ; 
+            I enjoyed its modern lifestyle and bustling business hubs.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Top 3 Cities I Would Like To Visit</h2>
+    <div class="grid-container">
+      <!-- Tile 4 -->
+      <div class="city-tile">
+        <div class="city-image">
+          <img src="venice.jpg" alt="Venice, Italy">
+        </div>
+        <div class="city-text">
+          <h3>Venice, Italy</h3>
+          <p>
+            I’d love to take a gondola ride, explore 
+            the historic canals, and immerse 
+            myself in the unique beauty of Venice.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tile 5 -->
+      <div class="city-tile">
+        <div class="city-image">
+          <img src="paris.jpg" alt="Paris, France">
+        </div>
+        <div class="city-text">
+          <h3>Paris, France</h3>
+          <p>
+            One day I hope to see the Eiffel Tower, 
+            enjoy café culture, and visit 
+            its world-famous museums.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tile 6 -->
+      <div class="city-tile">
+        <div class="city-image">
+          <img src="kyoto.jpeg" alt="Kyoto, Japan">
+        </div>
+        <div class="city-text">
+          <h3>Kyoto, Japan</h3>
+          <p>
+            From temples to cherry blossoms, Kyoto 
+            is at the top of my travel list 
+            for its history and traditions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div><!-- .scale-container -->
+
+</body>
+</html>
